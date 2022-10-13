@@ -291,3 +291,64 @@ a:hover {
     display: none;
   }
 }
+
+
+
+body.light ::selection {
+  background-color: pink;
+}
+
+hr {
+margin: 0 auto;
+width: 20rem;
+}
+
+.container {
+margin: 0 auto;
+padding: 5rem 0 0 0;
+width: 40rem;
+position: relative;
+}
+
+
+
+hr {
+border: .1rem solid #111;
+}
+
+
+
+.btn-toggle {
+width: 6rem;
+height: 6rem;
+border-radius: 50%;
+background: pink;
+position: absolute;
+top: 7rem;
+left: -10rem;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+box-shadow: 0 .5rem .9rem rgba(0, 0, 0, .2);
+}
+
+.btn-toggle i {
+font-size: 2rem;
+}
+
+/* Dark Mode */
+
+body.dark {
+color: #786ded;
+background: #212121;
+}
+
+body.dark ::selection {
+background: #111;
+}
+
+body.dark .btn-toggle {
+color: #999;
+background: #111;
+}
